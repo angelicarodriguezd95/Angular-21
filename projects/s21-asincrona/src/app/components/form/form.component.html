@@ -1,0 +1,18 @@
+<section class="container mt-5">
+    <h2>Registro de Usuarios</h2>
+    <form class="container form-container" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline" class="mb-2">
+            <mat-label>Ingrese un nombre</mat-label>
+            <input matInput placeholder="" autocomplete="off" name="name" [(ngModel)]="datos.name" required>
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="mb-2">
+            <mat-label>Ingrese un username</mat-label>
+            <input matInput placeholder="" autocomplete="off" name="username" [(ngModel)]="datos.username" required>
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Enviar</button>
+    </form>
+</section>
+
+
